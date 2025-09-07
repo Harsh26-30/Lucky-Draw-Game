@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: rgb(9, 9, 9);
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 1, 34, 0.833);
+    user-select: none;
+    overflow-x: hidden;
+}
+#nav{
+    backdrop-filter: blur(55px);
+    height: 5vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:.001em solid rgb(67, 67, 3);
+    z-index: 99;
+    position: fixed;
+}
+#nav1{
+    width: 60px;
+    height: 60px;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 1px;
+    border-radius: 6px;
+}
+#nav2{
+    display: flex;
+    align-items: center;
+    padding: 2vw 2vw;
+    display: flex;
+    width: 33vw;
+    gap:1.2vw; 
+}
+#nav2 h4{
+    font-size: 1.8vw;
+    background-color: bisque;
+    padding: 3px 2px;
+    border-radius: 50px;
+}
+#nav2 img{
+    height: 50px;
+    width: 60px;
+    border-radius: 70px;
+    border: .1em solid white;
+}
+#hc1b{
+    font-size: 1.7vw;
+    background-color: bisque;
+    padding: 3px 2px;
+    border-radius: 50px;
+    position: absolute;
+    right: 65px;
+    display: none;
+}
+#main{
+    width: 100%;
+    height: calc(100% - 5vw);
+    margin-top: 29px;
+    background: linear-gradient(135deg, #280025f6, #070107);
+    position: relative;
+}
+#page1{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    overflow: auto;
+    scrollbar-width: none;
+}
+#box1{
+    
+    width: 50%;
+    height:90vmin ;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#box1 h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600px;
+    color:rgba(255, 2, 91, 0.988);
+    font-size: 5vw;
+    margin: 20px 0px 0px 10px;
+    font-size: 5vw;
+    position: relative;
+    display: block;
+}
+#box1 h1::before{
+    position: absolute;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600px;
+    left: -3px;
+    top: -2px;
+    content: "About Us";
+    color:#1f001cfb;
+   
+}
+#box1 p{
+    margin: 15px 0px 0px 10px;
+    font-size: 2.5vw;
+    color: rgba(203, 203, 14, 0.721);
+}
+#box1 img{
+    height: 23vw;
+    width: 23vw;
+    margin: 20px 10px 0px 0px ;
+    padding: 8px 9px;
+    border-radius: 2vw;
+}
+#box2{
+    width: 50%;
+    height:90vmin ;
+    padding: 10px 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#box2 img{
+    height: 23vw;
+    width: 23vw;
+    margin: 20px 10px 0px 0px ;
+    padding: 8px 9px;
+    border-radius: 2vw;
+}
+#box2 h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600px;
+    color: red;
+    font-size: 5vw;
+    margin: 20px 0px 0px 10px;
+    font-size: 5vw;
+    position: relative;
+    display: block;
+}
+#box2 h1::before{
+    position: absolute;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600px;
+    left: -3px;
+    top: -2px;
+    content: "Vision";
+    color:#070107;
+}
+#box2 p{
+    margin: 15px 0px 0px 10px;
+    font-size: 2.5vw;
+    color: rgba(203, 203, 14, 0.721);
+}
+#page2{
+    width: 100%;
+    height: 570vw;
+    background-color: rgb(240, 111, 6);
+    position: relative;
+    background-image: url(https://wallpaperaccess.com/full/1239383.jpg);
+}
+#page2 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    padding: 8px 0px ;
+    color: bisque;
+}
+#page2 input{
+    padding: 15px 10px;
+    margin: 1% 2% 5% 1% ;
+    background: color-mix(in hsl increasing hue, purple 10%, blue 1%);
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: -4em solid rgba(239, 231, 238, 0.401);
+    outline-style: none;
+    font-size: 4vw;
+    color: bisque;
+    text-align: center;
+    position: relative;
+}
+#inputbox{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#inputbox2{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit{
+    display: none;
+}
+#buttonbox{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#buttonbox button{
+    color: brown;
+    background: color-mix(in hsl increasing hue, purple 1%, blue 10%);
+    outline: none;
+    border-radius: 50px;
+    width: 15vw;
+    height: 5vw;
+}
+#hc1o{
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(26, 6, 247);
+    font-family: sans-serif;
+    display: none;
+}
+#hc2o{
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(247, 6, 42);
+    font-family: sans-serif;
+    display: none;
+}
+@media (max-width:1348px) {
+    #nav2 h4{
+       padding: 0px 0px; 
+       font-size: 1.5vw;
+    }
+    #nav2 img{
+    height: 40px;
+    width: 50px;
+    border-radius: 70px;
+    border: .1em solid white;
+    }
+    #nav1{
+        width: 40px;
+        height: 40px;
+    }
+    #page1{
+        height: 69vh;
+    }
+}
+@media (max-width:690px) {
+    #nav2 h4{
+       padding: 0px 0px; 
+       font-size: 1.5vw;
+       display: none;
+    }
+    #nav2 img{
+      height: 18px;
+      width: 28px;
+      position: absolute;
+      right: 20px;
+    }
+    #hc1b{
+         display: initial;
+    }
+    #nav1{
+        width: 30px;
+        height: 30px;
+    }
+    #nav{
+        height: 7vw;
+    }
+    #box1 p{
+    font-size: 2.5vw;
+    }
+    #box2 p{
+    font-size: 2.5vw;
+    }
+    #box2 h1::before{
+    left: -2px;
+    top: -1px;
+    }
+    #box1 h1::before{
+    left: -2px;
+    top: -1px;
+    }
+    #box1 img{
+        border-radius: 20px;
+        height: 30vh;
+        width: 40vw;
+    }
+    #box2 img{
+        border-radius: 20px;
+        height: 30vh;
+        width: 40vw;
+    }
+    #page1{
+        height: 58vh;
+    }
+    #page2{
+    height: 90vw;
+    }
+}
+@media(max-width:400px){
+    #nav2 img{
+      height: 9px;
+      width: 15px;
+    }
+    #nav1{
+        width: 20px;
+        height: 20px;
+    }
+    #hc1b{
+        right: 38px;
+         display: initial;
+    }
+    #nav{
+        height: 8vw;
+    }
+    #box2 h1::before{
+    left: -2px;
+    top: -1px;
+    }
+    #box1 h1::before{
+    left: -2px;
+    top: -1px;
+    }
+    #page1{
+        height: 42vh;
+    }
+}
